@@ -278,7 +278,13 @@ Deploy to:
   git subtree push --prefix server heroku main
   ```
 
-- **Railway**: Connect Git repo, set root directory to `/server`
+- **Railway** (Recommended):
+  ```bash
+  # See detailed guide: RAILWAY_DEPLOYMENT.md
+  # Railway auto-detects configuration from railway.json
+  # Just connect your GitHub repo and deploy!
+  ```
+  Full instructions: See `RAILWAY_DEPLOYMENT.md`
 
 - **AWS EC2/EB**: Package and deploy server folder
 

@@ -1,0 +1,30 @@
+# Ignore frontend when deploying backend
+slumberland-ui/
+
+# Node modules
+node_modules/
+
+# Environment files
+*.env.local
+*.env.development
+*.env.test
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
