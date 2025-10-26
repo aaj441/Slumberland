@@ -1,0 +1,22 @@
+{
+  "buildCommand": "pnpm build",
+  "devCommand": "pnpm dev",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "name": "slumberland",
+  "outputDirectory": ".vinxi/dist/public",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "github": {
+    "autoDeployOnPush": true,
+    "autoJobCancelation": true
+  }
+}
+

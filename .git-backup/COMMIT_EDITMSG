@@ -1,0 +1,8 @@
+Initial commit with automated deployment setup
+
+- Added GitHub Actions workflows for CI/CD
+- Configured Vercel, Railway, and Render deployments
+- Added deployment automation scripts
+- Created environment variable templates
+- Added health check endpoints
+- Configured Docker support
