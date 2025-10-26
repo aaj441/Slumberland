@@ -1,9 +1,50 @@
-node_modules
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Generated files
+.yarn/
+dist/
+build/
+.output/
+.vinxi/
+.tanstack/
+
+# Environment
 .env
 .env.local
-.env.production
+.env*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS
 .DS_Store
-dist
-*.log
-.cache
-pnpm-lock.yaml
+*.pem
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Prisma
+prisma/*.db
+prisma/*.db-journal
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Ensure we have .vercelignore to prevent CRA detection
+.vercel/

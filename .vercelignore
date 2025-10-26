@@ -1,13 +1,10 @@
-.git
-.gitignore
-.env
-.env.local
-.DS_Store
-node_modules
-.vscode
-.codapt
-*.md
-scripts
-docker
-pnpm-lock.yaml
+# Vercel deployment configuration
+# This tells Vercel to use our custom build setup
 
+# Ignore everything except what we need
+node_modules/
+.git/
+.vercel/
+
+# Ensure Vercel uses our build command from vercel.json
+# NOT react-scripts build
