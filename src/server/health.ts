@@ -4,9 +4,10 @@ export function createHealthCheck() {
   return {
     status: "healthy",
     timestamp: new Date().toISOString(),
-    service: "melatonin",
+    service: "slumberland",
     version: process.env.npm_package_version || "1.0.0",
     environment: process.env.NODE_ENV || "unknown",
+    archetypes: "12 agentic gods system active",
   };
 }
 

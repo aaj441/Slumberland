@@ -5,7 +5,7 @@
 
 set -e
 
-echo "🚀 Melatonin Deployment Automation"
+echo "🚀 Slumberland Deployment Automation"
 echo "===================================="
 
 # Colors for output
@@ -16,7 +16,7 @@ NC='\033[0m' # No Color
 
 # Check if we're in the right directory
 if [ ! -f "package.json" ]; then
-    echo -e "${RED}Error: package.json not found. Are you in the Melatonin directory?${NC}"
+    echo -e "${RED}Error: package.json not found. Are you in the Slumberland directory?${NC}"
     exit 1
 fi
 
@@ -51,9 +51,9 @@ echo -e "${YELLOW}Setup GitHub Remote${NC}"
 echo "Enter your GitHub username:"
 read GITHUB_USERNAME
 
-echo "Enter your repository name (default: Melatonin):"
+echo "Enter your repository name (default: Slumberland):"
 read REPO_NAME
-REPO_NAME=${REPO_NAME:-Melatonin}
+REPO_NAME=${REPO_NAME:-Slumberland}
 
 # Check if remote already exists
 if git remote | grep -q "origin"; then
