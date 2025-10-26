@@ -1,10 +1,13 @@
 {
-  "buildCommand": "pnpm build",
+  "version": 2,
+  "buildCommand": "./build.sh",
   "devCommand": "pnpm dev",
   "installCommand": "pnpm install",
   "framework": null,
   "name": "slumberland",
   "outputDirectory": ".vinxi/dist/public",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
     {
       "source": "/(.*)",
@@ -13,10 +16,6 @@
   ],
   "env": {
     "NODE_ENV": "production"
-  },
-  "github": {
-    "autoDeployOnPush": true,
-    "autoJobCancelation": true
   }
 }
 
