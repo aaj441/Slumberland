@@ -1,14 +1,14 @@
 {
-  "version": 2,
-  "buildCommand": "./build.sh",
-  "devCommand": "pnpm dev",
+  "buildCommand": "pnpm install && pnpm build",
   "installCommand": "pnpm install",
-  "framework": null,
-  "name": "slumberland",
+  "framework": "other",
   "outputDirectory": ".vinxi/dist/public",
   "cleanUrls": true,
-  "trailingSlash": false,
   "rewrites": [
+    {
+      "source": "/trpc/(.*)",
+      "destination": "/api/trpc"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
